@@ -24,10 +24,7 @@
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
+
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -115,7 +112,7 @@
   display: flex;
   margin: auto;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   width: 80%;
   margin-bottom: 100px;
 
@@ -166,9 +163,7 @@
   font-size: 24px;
   font-weight: 600;
 }
-.two-columns_paragraph{
-  display: flex;
-}
+
 .section-title{
   position: relative;
  
