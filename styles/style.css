@@ -1,4 +1,7 @@
+@import"reset.css";
+
 .page {
+  
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -19,7 +22,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   /* выше установили ограничения для секции */
 }
 
@@ -33,58 +36,48 @@
   margin-right: 0;
   margin-top: 80px;
 }
-.header__logo_place{
- 
+.logo{
   height: 32px;
-  width: 228px;
-  min-width: 600px;
-  max-width: 756px;
-  background-image: url(../images/logo_place_header.svg);
-  background-repeat: no-repeat;
+  width: 228px; 
+}
+.header__logo_place{
   position: absolute;
   top: 30px;
   left: 64px;
+ 
 }
 .header__title{
-  
-  /* background-color: yellow; */
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   margin-left: 64px;
   width: 730px;
   font-size: 102px;
-  font-weight: 600px;
+  font-weight: 600;
   line-height: 96px;
-  z-index: 3;
-  
- 
-  
+  z-index: 2;
 }
 .header__subtitle{
   position: absolute;
   left: 64px;
-  bottom: 20px; /*почему 20 а не 30? */
-
+  bottom: 30px;
   width: 388px;
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
- /* background-color: red; */
+  z-index: 2;
+
 }
 
 
 .header__main-illustration{
-  /* background-color: red; */
   height: 608px;
   width: 765px;
   position: absolute;
-  bottom: 0px; /*разобаться почему */
+  bottom: 0px;
   right: 0;
-  z-index: 3;
-  
-  
-
+  z-index: 1;
 }
 .header__square-pic{
   background-color: #2f80ed;
@@ -93,28 +86,25 @@
   position: absolute;
   right: 0;
   top: 64px;
-  z-index: 2;
-  
+  z-index: 1;
 }
-.ident{
-  position: relative;
-  top: -20px; /*Почему? */
-  height: 100px;
-  width: auto;
-  /* background-color: green; /Разделитель*/
+.header__link{
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
 }
-
 /* 2 страница задания */
 
 .description{
   position: relative;
-  top:-20px;
   display: flex;
-  margin: auto;
+  padding-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
   align-items: center;
   justify-content: center;
   width: 80%;
-  margin-bottom: 100px;
+
 
 }
 
@@ -122,12 +112,12 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
+  margin-bottom: 100px;
+  margin-top: 100px;
   width: auto;
 
 }
 .two-columns__main-text{
-  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -135,7 +125,7 @@
 
   
 }
-.two-columns_brief{
+.two-columns__brief{
   width: 175px;
   display: flex;
    flex-direction: row;
@@ -149,13 +139,13 @@
 }
 
   
-.two-columns_paragraph{
+.two-columns__paragraph{
   display: flex;
   line-height: 34px;
   font-size: 24px;
  font-weight: normal;
 }
-.two-columns_span-accent{
+.two-columns__span-accent{
   display: flex;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -166,7 +156,6 @@
 
 .section-title{
   position: relative;
- 
   display: flex;
   width: 60%;
   line-height: 1.15;
@@ -194,7 +183,6 @@
 }
 .section-table{
   position: relative;
-  top: -20px; /*Почему? */
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -213,7 +201,6 @@
 }
 .table__heading{
   display: flex;
-  
   margin-bottom: 20px;
   width: 250px;
   line-height: 1.15;
@@ -222,41 +209,47 @@
 }
 .table__text{
   display: flex;
-  
   margin-bottom: 40px;
   width: 250px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
 }
-.gidits{
+.digits{
+  
   position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .feynman{
-margin-top: -20px;
+padding-top: 100px;
+padding-bottom: 100px;
+position: relative;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: flex-start;
 height: 890px;
-
 background-image: url(../images/feynman.png);
 background-repeat: no-repeat;
 background-position-x: left;
 background-position-y: bottom;
+background-color: #f2f2f2;
 
 }
 .feynman__title{
-margin-top: 20px;
+margin-top: 100px;
 text-align: center;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 648px;
-  height: 50%;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 648px;
+height: 50%;
+line-height: 1.15;
+font-size: 120px;
+font-weight: 600;
   
 }
 .feynman__subtitle{
@@ -268,7 +261,8 @@ text-align: center;
   font-size: 36px;
   font-weight: normal;
 }
-.feynman_link{
+.feynman__link{
+  margin-right: 48px;
    display: flex;
   flex-direction: row;
   align-self: flex-end;
@@ -276,57 +270,37 @@ text-align: center;
     font-size: 36px;
     font-weight: normal;
     color: #2f80ed;
-
 }
-.kaufman__table__cell{
+
+.kaufman{
+  padding-top: 90px;
+  padding-bottom: 90px;
+  margin-left: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  }
+
+.kaufman__table_cell{
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-left: -40px; /* Почему? */
- 
   width: 200px;
   height: auto;
-
   margin-top: 80px;
 }
-.kaufman__table__text{
+.kaufman__table_text{
   display: flex;
-  
-  margin-bottom: 40px;
   width: 200px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-.kaufman{
-margin-top: -20px;
-margin-bottom: 90px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: flex-start;
-position: relative;
-overflow: hidden;
-background-color: black;
-
-}
-.kaufman__section-title{
-  position: relative;
-  display: flex;
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  margin: auto;
-  align-items: center;
-  justify-content: center;  
-  
-}
-.kaufman__ident{
-  position: relative;
-  top: -20px; /*Почему? */
-  height: 90px;
-  width: auto;
-  background-color: black; /*Разделитель*/
 }
 .kaufman__triangle{
   display: flex;
@@ -334,45 +308,41 @@ background-color: black;
   width: 877px;
   position: absolute;
   right: -210px;
+  
 }
+
+/* Подвал */
 .footer{
+  padding-top: 60px;
+  padding-bottom: 40px;
   position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  
-  margin-top: 60px;
-  margin-bottom: 40px;
+  display: flex; 
+  justify-content: center;
+  background-color: #1f1f1f;
   color: white;
-  min-width: 350px;
-  width: 90%;
-  
-
-
+  min-height: 350px;
 }
+
 .footer__collumns{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  flex-basis: 711px;
+  justify-content: center;
+  width: 90%;
 
 }
-.content__copyright{
+.footer__collumns_content-copyright{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
-  
+  flex-basis: 711px;
 }
-.footer__place{
+
+.footer__logo_place{
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 228px;
-  height: 32px;
-  background-image: url(../images/logo_place_footer.svg);
-  
+ flex-direction: column;
+  justify-content: space-between;
 }
+
 .footer__author{
   margin-top: 18px;
   margin-bottom: 18px;
@@ -383,12 +353,22 @@ background-color: black;
   font-size: 18px;
   font-weight: normal;
 }
-.content__info{
+.footer__collumns_content-info{
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  
+  justify-content: flex-start;
+  align-items: flex-end;
+
 }
+.footer__collumns_content-social{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  align-items: flex-end;
+}
+  
+
 .footer__column-heading{
   display: flex;
   margin-bottom: 20px;
@@ -403,29 +383,16 @@ background-color: black;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  
 }
-.content__social{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  
-  margin-bottom: 20px;
-}
+
 .social-icon{
   width: 16px;
   height: 16px;
 }
-.footer__collumns__copyright{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-basis: 711px;
-  
-}
+
 .footer__columns_about{
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-basis: 711px;
 }
