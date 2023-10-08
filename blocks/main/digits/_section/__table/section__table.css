@@ -1,0 +1,12 @@
+.section__table {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1100px;
+    list-style-type: none;
+  }
+  
