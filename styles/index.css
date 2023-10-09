@@ -1,10 +1,10 @@
 @import url(../blocks/vendor/normalize.css);
 @import url(../blocks/root/root.css);
 @import url(../blocks/root/_logo/logo.css);
-@import url(../blocks/root/_table/__cell/table__cell.css);
-@import url(../blocks/root/_table/__cell/_theme_dark/table__cell_theme_dark.css);
-@import url(../blocks/root/_table/__heading/table__heading.css);
-@import url(../blocks/root/_table/__text/table__text.css);
+@import url(../blocks/root/__table/__cell/table-cell.css);
+@import url(../blocks/root/__table/__cell/_theme_dark/table-cell-theme-dark.css);
+@import url(../blocks/root/__table/__heading/table-heading.css);
+@import url(../blocks/root/__table/__text/table-text.css);
 @import url(../blocks/root/__links/link-opacity-transition.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__link/header__link.css);
