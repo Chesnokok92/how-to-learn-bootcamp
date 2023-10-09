@@ -36,9 +36,9 @@
 @import url(../blocks/main/feyman/__subtitle/feynman__subtitle.css);
 @import url(../blocks/main/feyman/__title/feynman__title.css);
 @import url(../blocks/main/digits/digits.css);
-@import url(../blocks/main/digits/_section/__subtitle/section__subtitle.css);
-@import url(../blocks/main/digits/_section/__table/section__table.css);
-@import url(../blocks/main/digits/_section/__titile/section__title.css);
+@import url(../blocks/main/digits/_section/__subtitle/section-subtitle.css);
+@import url(../blocks/main/digits/_section/__table/section-table.css);
+@import url(../blocks/main/digits/_section/__titile/section-title.css);
 @import url(../blocks/main/khan/khan.css);
 @import url(../blocks/main/khan/khan__author/khan__author.css);
 @import url(../blocks/main/khan/khan__book-container/khan__book-container.css);
