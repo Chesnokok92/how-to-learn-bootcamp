@@ -12,4 +12,5 @@
   background-position-x: left;
   background-position-y: bottom;
   background-color: #f2f2f2;
+  box-sizing: border-box;
 }

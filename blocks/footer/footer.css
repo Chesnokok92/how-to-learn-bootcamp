@@ -8,5 +8,6 @@
     background-color: #1f1f1f;
     color: white;
     min-height: 350px;
+    box-sizing: border-box;
   }
   

@@ -1,5 +1,6 @@
 .feynman__subtitle {
     display: flex;
+    padding-bottom: 0;
     flex-direction: row;
     align-items: center;
     margin-top: 70px;

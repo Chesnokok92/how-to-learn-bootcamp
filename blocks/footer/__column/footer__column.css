@@ -3,5 +3,8 @@
   flex-direction: column;
   justify-content: space-between;
   width: 90%;
+}
+
+.footer__column:first-child {
   flex-basis: 711px;
 }
