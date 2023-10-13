@@ -49,7 +49,6 @@
 @import url(../blocks/page/page.css);
 @import url(../blocks/section-subtitle/section-subtitle.css);
 @import url(../blocks/section-title/section-title.css);
-@import url(../blocks/span/two-columns__span-accent.css);
 @import url(../blocks/table/__cell/table__cell.css);
 @import url(../blocks/table/__heading/table__heading.css);
 @import url(../blocks/table/__text/table__text.css);
@@ -58,12 +57,12 @@
 @import url(../blocks/two-columns/__brief/two-columns__brief.css);
 @import url(../blocks/two-columns/__main-text/two-columns__main-text.css);
 @import url(../blocks/two-columns/__paragraph/two-columns__paragraph.css);
-@import url(../blocks/two-columns/__span-accent/span-accent.css);
+@import url(../blocks/two-columns/__span-accent/two-columns__span-accent.css);
 @import url(../blocks/two-columns/two-columns.css);
 @import url(../blocks/video/__iframe/video__iframe.css);
 @import url(../blocks/video/__iframes/video__iframes.css);
 @import url(../blocks/video/video.css);
-@import url(../blocks/table/_theme/table_theme_dark/table_theme_dark.css);
+@import url(../blocks/table/_theme/table_theme_dark.css);
 @import url(../blocks/table/__cell/_theme/table__cell_theme_dark.css);
 @import url(../blocks/table/__heading/_theme/table_heading_theme_dark.css);
 @import url(../blocks/table/__text/_theme/table__text_theme_dark.css);
